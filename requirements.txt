@@ -1,0 +1,3 @@
+# requirements.txt for WhatsApp Message Sender
+
+pywhatkit>=5.0.0  # Required for sending WhatsApp messages
