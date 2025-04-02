@@ -19,6 +19,9 @@ colorama_init(autoreset=True)
 # --- Constants ---
 DB_NAME = 'chat_log.db' # Define database name centrally
 
+
+# TODO: Add DB ROTATION 
+
 # --- NLTK Data Download ---
 def download_nltk_data():
     """Downloads necessary NLTK data if not already present."""
