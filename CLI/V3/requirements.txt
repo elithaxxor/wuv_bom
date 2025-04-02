@@ -1,0 +1,6 @@
+pywhatkit
+pyttsx3
+colorama
+textblob
+transformers
+openai
