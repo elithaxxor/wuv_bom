@@ -20,5 +20,14 @@ X_test_vectorized = vectorizer.transform(X_test)
 model = MultinomialNB()
 model.fit(X_train_vectorized, y_train)
 
+# Evaluate the model on the testing data
+accuracy = model.score(X_test_vectorized, y_test)
+print("Model accuracy:", accuracy)
+
+# Save the trained model
+import pickle
+with open("trained_model.pkl", "wb") as f:
+    pickle.dump(model, f)
+
 def train_model():
     return model
