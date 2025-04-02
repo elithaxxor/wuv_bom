@@ -1,4 +1,4 @@
-Below is a visually engaging and verbose README.md file, enriched with icons, emojis, and formatting to captivate readers and enhance understanding:
+##### This version uses NLTK.Vader, logging and db 
 
 ```markdown
 # 📱 Python WhatsApp Messenger & Reply Assistant (v1.4) 🚀
