@@ -9,6 +9,9 @@ from textblob import TextBlob
 from transformers import pipeline
 import openai
 
+
+## Uses textblob and openai gpt2 (cuz im cheap) 
+
 # Initialize Hugging Face pipelines for sentiment analysis and text generation.
 sentiment_analyzer = pipeline("sentiment-analysis")
 text_generator = pipeline("text-generation", model="gpt-2")
