@@ -203,5 +203,3 @@ Feel free to use, modify, and distribute—responsibly!
 
 🌟 **Enjoy the ride of automation and NLP! Have fun coding responsibly.**
 ```
-
-This version of your README makes heavy use of **markdown styling**, **icons**, and logical structuring to create an engaging visual and informative flow while covering all technical and usage aspects.
