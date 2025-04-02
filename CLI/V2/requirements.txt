@@ -1,0 +1,8 @@
+pywhatkit
+nltk
+train # Assuming this is a custom module, no installation required
+logging # Part of the Python standard library, no installation required
+sqlite3 # Part of the Python standard library, no installation required
+pickle # Part of the Python standard library, no installation required
+pandas
+scikit-learn
