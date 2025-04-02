@@ -1,4 +1,8 @@
-#### NLTK + OPENAI 
+#### NLTK [textblob] + OPENAI 
+###### TODO: Switch from textblob to VADER or add Hugging Face Transformation 
+
+
+
 ```markdown
 # WhatsApp Messaging CLI Tool
 
