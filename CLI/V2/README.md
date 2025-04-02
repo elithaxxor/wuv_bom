@@ -1,6 +1,6 @@
 ####### Simple Multinomial Naive Bayes classifier for predicting responses on WhatsApp
 
-
+```markdown
 ⸻
 
 🤖 WhatsApp Chatbot using NLTK and PyWhatKit
@@ -94,3 +94,4 @@ python -m nltk.downloader all
 	1.	Run the main script:
 
 python main.py
+```
