@@ -1,8 +1,6 @@
 import pywhatkit as kit
-import random
-import time
+import random, time, sys, os, logging 
 from datetime import datetime
-import logging
 import pyttsx3
 from colorama import Fore, Style, init as colorama_init
 import sqlite3 # Import SQLite library
@@ -20,7 +18,7 @@ colorama_init(autoreset=True)
 
 # --- Constants ---
 DB_NAME = 'chat_log.db' # Define database name centrally
-## used to download VADER 
+
 # --- NLTK Data Download ---
 def download_nltk_data():
     """Downloads necessary NLTK data if not already present."""
@@ -30,7 +28,7 @@ def download_nltk_data():
         try:
             nltk.data.find(path)
             logging.info(f"NLTK data '{pkg_id}' found.")
-            print(f"{Fore.GREEN}NLTK data '{pkg_id}' found.{Style.RESET_ALL}") # Less verbose console
+            # print(f"{Fore.GREEN}NLTK data '{pkg_id}' found.{Style.RESET_ALL}") # Less verbose console
         except LookupError:
             print(f"{Fore.YELLOW}NLTK data '{pkg_id}' not found. Downloading...{Style.RESET_ALL}")
             logging.warning(f"NLTK data '{pkg_id}' not found. Attempting download.")
@@ -46,7 +44,6 @@ def download_nltk_data():
 
 # --- Global NLTK Analyzer ---
 try:
-    print("[+] starting analyzer") 
     analyzer = SentimentIntensityAnalyzer()
 except LookupError:
     print(f"{Fore.YELLOW}VADER lexicon not found initially. Attempting download...{Style.RESET_ALL}")
@@ -57,7 +54,6 @@ except LookupError:
 def init_db(db_path=DB_NAME):
     """Initializes the SQLite database and creates the interactions table if it doesn't exist."""
     try:
-        print("[!] starting db") 
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
         cursor.execute('''
