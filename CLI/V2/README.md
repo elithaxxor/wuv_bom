@@ -3,7 +3,7 @@
 ```markdown
 ⸻
 
-🤖 WhatsApp Chatbot using NLTK and PyWhatKit
+🤖 WhatsApp Chatbot using NLTK (Multinomial Naive Bayes Classifyer / TD-IDF) and PyWhatKit
 
 A simple yet effective chatbot that uses Natural Language Processing to classify message hostility and respond intelligently over WhatsApp.
 
